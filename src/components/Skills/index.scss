@@ -1,0 +1,9 @@
+@use "../src/utilities" as *;
+
+.skills {
+  background-color: $color-bule;
+  margin: -0.5rem 0rem;
+  &__skill {
+    margin: 0.5rem;
+  }
+}
