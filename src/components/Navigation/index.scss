@@ -1,0 +1,65 @@
+@use "../src/utilities" as *;
+
+.nav {
+  position: relative;
+  height: 4rem;
+  display: flex;
+  justify-content: space-between;
+
+  &__logo {
+    display: flex;
+    align-items: center;
+
+    img {
+      height: 4rem;
+      width: auto;
+    }
+  }
+
+  &__bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+
+    &__menu {
+      z-index: 10;
+      @include breakpoint-up(medium) {
+        display: none;
+      }
+    }
+    &__links {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 1.5rem;
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100rem;
+      width: 50vw;
+      padding-right: 1.5rem;
+      padding-top: 8rem;
+      border-left: 0.2rem $color-dark solid;
+      background-color: $color-taro;
+      opacity: 0;
+
+      @include breakpoint-up(medium) {
+        position: unset;
+        border: none;
+        padding: 0;
+        background-color: transparent;
+        flex-direction: row;
+        justify-content: flex-end;
+        opacity: 1;
+      }
+
+      &.open {
+        opacity: 0.95;
+        @include breakpoint-up(medium) {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
