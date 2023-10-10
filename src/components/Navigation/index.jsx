@@ -22,21 +22,24 @@ const Navigation = () => {
         </div>
 
         <div className="nav__bar" onClick={toggleMenu}>
-          <div className="nav__bar__menu">
+          <div className="nav__bar__menu" role="switch" aria-checked={menu}>
             {menu ? (
               <FontAwesomeIcon icon={faXmark} />
             ) : (
               <FontAwesomeIcon icon={faBars} />
             )}
           </div>
-          <div className={menu ? "nav__bar__links open" : "nav__bar__links"}>
-            <HashLink smooth to="/#works">
+          <div
+            className={menu ? "nav__bar__links open" : "nav__bar__links"}
+            role="menu"
+          >
+            <HashLink smooth to="/#works" role="menuitem">
               Works
             </HashLink>
-            <HashLink smooth to="/#skills">
+            <HashLink smooth to="/#skills" role="menuitem">
               Skills
             </HashLink>
-            <HashLink smooth to="/#contact">
+            <HashLink smooth to="/#contact" role="menuitem">
               Contact
             </HashLink>
           </div>
