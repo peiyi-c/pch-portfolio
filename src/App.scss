@@ -1,0 +1,42 @@
+@use "../src/utilities/" as *;
+
+#root {
+  //max-width: 80rem;
+  margin: 0 auto;
+}
+
+body {
+  text-align: center;
+  font-family: $font-fam-prime;
+  @extend .font-size-125;
+}
+
+.container {
+  padding: 3rem 1.5rem 2rem 1.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: $color-dark;
+}
+
+a:hover,
+a:active,
+a.active {
+  color: $color-taro;
+}
+
+hr {
+  display: block;
+  background-color: $color-dark;
+  height: 0.2rem;
+  border: 0;
+}
+
+// Fontawesom
+svg {
+  path {
+    fill: $color-dark;
+  }
+  @extend .font-size-200;
+}
