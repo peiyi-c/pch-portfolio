@@ -19,17 +19,20 @@ const Skills = () => {
   return (
     <>
       <section id="skills" className="skills container">
-        <FontAwesomeIcon className="skills__skill" icon={faHtml5} />
-        <FontAwesomeIcon className="skills__skill" icon={faCss3} />
-        <FontAwesomeIcon className="skills__skill" icon={faSquareJs} />
-        <FontAwesomeIcon className="skills__skill" icon={faSass} />
-        <FontAwesomeIcon className="skills__skill" icon={faBootstrap} />
-        <FontAwesomeIcon className="skills__skill" icon={faNodeJs} />
-        <FontAwesomeIcon className="skills__skill" icon={faVuejs} />
-        <FontAwesomeIcon className="skills__skill" icon={faReact} />
-        <FontAwesomeIcon className="skills__skill" icon={faGit} />
-        <FontAwesomeIcon className="skills__skill" icon={faNpm} />
-        <FontAwesomeIcon className="skills__skill" icon={faFigma} />
+        <h1 className="skills__title">Skills</h1>
+        <div>
+          <FontAwesomeIcon className="skills__skill" icon={faHtml5} />
+          <FontAwesomeIcon className="skills__skill" icon={faCss3} />
+          <FontAwesomeIcon className="skills__skill" icon={faSquareJs} />
+          <FontAwesomeIcon className="skills__skill" icon={faSass} />
+          <FontAwesomeIcon className="skills__skill" icon={faBootstrap} />
+          <FontAwesomeIcon className="skills__skill" icon={faNodeJs} />
+          <FontAwesomeIcon className="skills__skill" icon={faVuejs} />
+          <FontAwesomeIcon className="skills__skill" icon={faReact} />
+          <FontAwesomeIcon className="skills__skill" icon={faGit} />
+          <FontAwesomeIcon className="skills__skill" icon={faNpm} />
+          <FontAwesomeIcon className="skills__skill" icon={faFigma} />
+        </div>
       </section>
       <hr />
     </>

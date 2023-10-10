@@ -3,6 +3,9 @@
 .skills {
   background-color: $color-bule;
   margin: -0.5rem 0rem;
+  display: grid;
+  grid-template-columns: 2fr 5fr;
+  align-items: center;
   &__skill {
     margin: 0.5rem;
   }

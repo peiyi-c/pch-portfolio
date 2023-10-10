@@ -2,6 +2,9 @@
 .contact {
   position: relative;
   min-height: 2rem;
+  &__title {
+    @extend .font-size-180;
+  }
   &__links {
     position: absolute;
     top: 150%;

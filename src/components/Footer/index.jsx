@@ -7,6 +7,7 @@ const Footer = () => {
   return (
     <>
       <footer id="contact" className="contact">
+        <h1 className="contact__title">Contact</h1>
         <div className="contact__links">
           <FontAwesomeIcon icon={faEnvelope} />
         </div>
