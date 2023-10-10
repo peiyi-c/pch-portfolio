@@ -1,1 +1,15 @@
 @use "../src/utilities" as *;
+.contact {
+  position: relative;
+  min-height: 2rem;
+  &__links {
+    position: absolute;
+    top: 150%;
+    left: 50%;
+    transform: translate(-50%);
+  }
+  &__waves {
+    position: absolute;
+    bottom: 0;
+  }
+}
