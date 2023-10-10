@@ -1,0 +1,12 @@
+@use "../src/utilities" as *;
+
+.works {
+  display: grid;
+  gap: 2rem;
+  height: 100rem;
+
+  &__item {
+    padding: 0.5rem;
+    border: 0.2rem solid $color-dark;
+  }
+}
