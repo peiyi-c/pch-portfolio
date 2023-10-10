@@ -1,11 +1,13 @@
 @use "../src/utilities/" as *;
 
 #root {
-  //max-width: 80rem;
+  max-width: 80rem;
+  min-width: 18rem;
   margin: 0 auto;
 }
 
 body {
+  overflow-x: hidden;
   text-align: center;
   font-family: $font-fam-prime;
   @extend .font-size-125;
