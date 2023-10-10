@@ -3,10 +3,18 @@
 .works {
   display: grid;
   gap: 2rem;
-  height: 100rem;
+
+  @include breakpoint-up(medium) {
+    grid-template-columns: repeat(2, 1fr);
+  }
 
   &__item {
     padding: 0.5rem;
     border: 0.2rem solid $color-dark;
+    font-family: $font-fam-text;
+    transition: transform 0.3s ease 0s;
+    &:hover {
+      transform: translateY(-5%) scale(1.005);
+    }
   }
 }
