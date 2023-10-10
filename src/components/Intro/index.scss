@@ -1,0 +1,9 @@
+@use "../src/utilities" as *;
+.intro {
+  &__title {
+  }
+  &__text {
+    @extend .font-size-120;
+    font-family: $font-fam-text;
+  }
+}

@@ -15,5 +15,5 @@ $size: 1;
     font-size: #{$size}rem;
     line-height: #{$size * 1.1};
   }
-  $size: $size + 0.25;
+  $size: $size + 0.05;
 }
