@@ -1,6 +1,4 @@
 import "./index.scss";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import Wave from "../../assets/wave.svg";
 
 const Footer = () => {
@@ -8,9 +6,7 @@ const Footer = () => {
     <>
       <footer id="contact" className="contact">
         <h1 className="contact__title">Contact</h1>
-        <div className="contact__links">
-          <FontAwesomeIcon icon={faEnvelope} />
-        </div>
+        <div className="contact__links"></div>
       </footer>
       <img className="concat__wave" aria-hidden="true" src={Wave} />
     </>
