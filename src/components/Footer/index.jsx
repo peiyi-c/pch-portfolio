@@ -1,10 +1,11 @@
 import "./index.scss";
 import Wave from "../../assets/wave.svg";
-
+import Wave2 from "../../assets/wave2.svg";
 const Footer = () => {
   return (
     <>
       <footer id="contact" className="contact">
+        <img className="contact__wave-2" aria-hidden="true" src={Wave2} />
         <h1 className="contact__title">Get In Touch</h1>
         <form className="contact__form">
           <ul role="list">
@@ -33,8 +34,8 @@ const Footer = () => {
               <input type="submit" value="SEND" />
             </li>
           </ul>
-          <img className="contact__wave" aria-hidden="true" src={Wave} />
         </form>
+        <img className="contact__wave-1" aria-hidden="true" src={Wave} />
       </footer>
     </>
   );

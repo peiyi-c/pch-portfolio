@@ -1,5 +1,13 @@
 @use "../src/utilities" as *;
 .contact {
+  &__wave-2 {
+    margin-top: -0.6rem;
+  }
+  &__wave-1 {
+    margin-top: -6rem;
+    position: relative;
+    z-index: -5;
+  }
   &__title {
     @extend .font-size-180;
   }
