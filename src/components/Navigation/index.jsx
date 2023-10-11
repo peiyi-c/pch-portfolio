@@ -12,12 +12,18 @@ const Navigation = () => {
     setMenu(menu ? false : true);
   };
 
+  const scrollOffset = (el) => {
+    const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
+    const yOffset = -111;
+    window.scrollTo({ top: yCoordinate + yOffset, behavior: "smooth" });
+  };
+
   return (
     <>
       <nav ref={navRef}>
         <div id="nav" className="nav container">
           <div className="nav__logo">
-            <HashLink smooth to="/#intro">
+            <HashLink smooth to="/#intro" scroll={scrollOffset}>
               <img src={LogoPCH} alt="PCH" />
             </HashLink>
           </div>
@@ -34,13 +40,28 @@ const Navigation = () => {
               className={menu ? "nav__bar__links open" : "nav__bar__links"}
               role="menu"
             >
-              <HashLink smooth to="/#works" role="menuitem">
+              <HashLink
+                smooth
+                to="/#works"
+                scroll={scrollOffset}
+                role="menuitem"
+              >
                 Works
               </HashLink>
-              <HashLink smooth to="/#skills" role="menuitem">
+              <HashLink
+                smooth
+                to="/#skills"
+                scroll={scrollOffset}
+                role="menuitem"
+              >
                 Skills
               </HashLink>
-              <HashLink smooth to="/#contact" role="menuitem">
+              <HashLink
+                smooth
+                to="/#contact"
+                scroll={scrollOffset}
+                role="menuitem"
+              >
                 Contact
               </HashLink>
             </div>
