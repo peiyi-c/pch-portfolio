@@ -4,11 +4,13 @@ const Works = () => {
   return (
     <>
       <section id="works" className="works container">
-        <h1 className="workds__title">Works</h1>
-        <Work />
-        <Work />
-        <Work />
-        <Work />
+        <h1 className="works__title">Works</h1>
+        <div role="list" className="works__list">
+          <Work />
+          <Work />
+          <Work />
+          <Work />
+        </div>
       </section>
       <hr />
     </>
