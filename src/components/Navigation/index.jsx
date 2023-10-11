@@ -11,12 +11,13 @@ const Navigation = () => {
   const toggleMenu = () => {
     setMenu(menu ? false : true);
   };
+
   return (
     <>
       <nav ref={navRef}>
         <div id="nav" className="nav container">
           <div className="nav__logo">
-            <HashLink smooth to="/">
+            <HashLink smooth to="/#intro">
               <img src={LogoPCH} alt="PCH" />
             </HashLink>
           </div>
@@ -47,6 +48,7 @@ const Navigation = () => {
         </div>
         <hr />
       </nav>
+      <div className="nav__bottom"></div>
     </>
   );
 };

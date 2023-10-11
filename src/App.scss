@@ -12,6 +12,10 @@ body {
   font-family: $font-fam-prime;
   @extend .font-size-125;
   background-color: $color-white;
+  scroll-snap-type: y mandatory;
+  > section {
+    scroll-snap-align: start;
+  }
 }
 
 .container {
