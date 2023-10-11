@@ -11,10 +11,11 @@ body {
   text-align: center;
   font-family: $font-fam-prime;
   @extend .font-size-125;
+  background-color: $color-white;
 }
 
 .container {
-  padding: 3rem 1.5rem 2rem 1.5rem;
+  padding: 3rem 1.5rem 2.5rem 1.5rem;
 }
 
 a {
@@ -33,6 +34,10 @@ hr {
   background-color: $color-dark;
   height: 0.2rem;
   border: 0;
+}
+
+h1 {
+  padding: 2rem;
 }
 
 // Fontawesom

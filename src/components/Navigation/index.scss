@@ -1,7 +1,11 @@
 @use "../src/utilities" as *;
-
+nav {
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: $color-white;
+}
 .nav {
-  position: relative;
   height: 4rem;
   display: flex;
   justify-content: space-between;

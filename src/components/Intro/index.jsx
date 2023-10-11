@@ -9,7 +9,24 @@ const Intro = () => {
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
           nihil aperiam, tempore doloremque libero impedit facere unde sint,
           tenetur amet incidunt, excepturi recusandae doloribus accusantium
-          dolorem odio ipsum optio? Error!
+          dolorem odio ipsum optio? Lorem, ipsum dolor sit amet consectetur
+          adipisicing elit. Sapiente blanditiis facere commodi, possimus
+          doloremque, nesciunt est, ad reiciendis maxime animi ipsum ex rem
+          veritatis? Aperiam at magnam id doloremque voluptates? Lorem, ipsum
+          dolor sit amet consectetur adipisicing elit. Sapiente blanditiis
+          facere commodi, possimus doloremque, nesciunt est, ad reiciendis
+          maxime animi ipsum ex rem veritatis? Aperiam at magnam id doloremque
+          voluptates? Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+          Sapiente blanditiis facere commodi, possimus doloremque, nesciunt est,
+          ad reiciendis maxime animi ipsum ex rem veritatis? Aperiam at magnam
+          id doloremque voluptates? Lorem, ipsum dolor sit amet consectetur
+          adipisicing elit. Sapiente blanditiis facere commodi, possimus
+          doloremque, nesciunt est, ad reiciendis maxime animi ipsum ex rem
+          veritatis? Aperiam at magnam id doloremque voluptates? Lorem, ipsum
+          dolor sit amet consectetur adipisicing elit. Sapiente blanditiis
+          facere commodi, possimus doloremque, nesciunt est, ad reiciendis
+          maxime animi ipsum ex rem veritatis? Aperiam at magnam id doloremque
+          voluptates?
         </p>
       </section>
     </>
