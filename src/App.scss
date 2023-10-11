@@ -47,3 +47,32 @@ svg {
   }
   @extend .font-size-200;
 }
+
+input[type="text"],
+input[type="email"],
+input[type="submit"],
+textarea {
+  width: 80%;
+  margin-bottom: 1rem;
+  padding: 0.35rem;
+  border: 0.2rem solid $color-dark;
+  background-color: $color-blue;
+  &::placeholder {
+    font-size: 1rem;
+    opacity: 0.5;
+  }
+}
+
+textarea {
+  padding-top: 0.7rem;
+}
+
+input:focus,
+textarea:focus {
+  &::placeholder {
+    font-size: 0.8rem;
+    display: inline-block;
+    position: relative;
+    bottom: 0.4rem;
+  }
+}
