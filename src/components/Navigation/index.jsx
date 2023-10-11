@@ -42,6 +42,14 @@ const Navigation = () => {
             >
               <HashLink
                 smooth
+                to="/#intro"
+                scroll={scrollOffset}
+                role="menuitem"
+              >
+                About Me
+              </HashLink>
+              <HashLink
+                smooth
                 to="/#works"
                 scroll={scrollOffset}
                 role="menuitem"
