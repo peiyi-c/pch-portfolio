@@ -8,6 +8,7 @@
 body {
   overflow-x: hidden;
   text-align: center;
+  color: $color-dark;
   font-family: $font-fam-prime;
   @extend .font-size-125;
   background-color: $color-white;
@@ -57,7 +58,8 @@ svg {
 input[type="text"],
 input[type="email"],
 input[type="submit"],
-textarea {
+textarea,
+select {
   width: 80%;
   @include breakpoint-up(large) {
     width: 70%;
@@ -69,6 +71,9 @@ textarea {
   &::placeholder {
     font-size: 1rem;
     opacity: 0.5;
+  }
+  &:focus-visible {
+    outline: 0.1rem solid $color-yellow;
   }
 }
 input[type="submit"] {
@@ -82,7 +87,16 @@ input[type="submit"] {
 textarea {
   padding-top: 0.7rem;
 }
-
+select {
+  height: fit-content;
+  width: fit-content;
+  color: inherit;
+  text-align: center;
+  float: left;
+  margin-top: 1rem;
+  margin-left: 5%;
+  cursor: pointer;
+}
 input:focus,
 textarea:focus {
   &::placeholder {

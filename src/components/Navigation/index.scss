@@ -50,7 +50,7 @@ nav {
 
       border-left: 0.2rem $color-dark solid;
       background-color: $color-taro;
-      overflow: hidden;
+      overflow: inherit;
       transition: right 0.3s ease-in-out 0s;
       z-index: 9;
 

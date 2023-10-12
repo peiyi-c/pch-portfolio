@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 import { HashLink } from "react-router-hash-link";
 import { useState, useRef } from "react";
+import LanguageSelect from "../Language/LanguageSelect";
 
 const Navigation = () => {
   const [menu, setMenu] = useState(false);
@@ -72,12 +73,12 @@ const Navigation = () => {
               >
                 Contact
               </HashLink>
+              <LanguageSelect />
             </div>
           </div>
         </div>
         <hr />
       </nav>
-      <div className="nav__bottom"></div>
     </>
   );
 };

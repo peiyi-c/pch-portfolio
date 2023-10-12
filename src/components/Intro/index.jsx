@@ -1,9 +1,14 @@
 import "./index.scss";
+import { useLanguageContext } from "../Language/LanguageContext";
+
 const Intro = () => {
+  const { t } = useLanguageContext();
   return (
     <>
       <section id="intro" className="intro container">
         <h1 className="intro__title">About Me</h1>
+        <h1>{t("line1")}</h1>
+        <h1>{t("line2")}</h1>
         <p className="intro__text">Here some creative intro text, thank you.</p>
         <p className="intro__text">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
