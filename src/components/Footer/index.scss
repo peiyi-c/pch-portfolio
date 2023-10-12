@@ -19,11 +19,14 @@
       &.success {
         color: $color-taro;
       }
-      &.failed {
+      &.failed,
+      &.invalid,
+      &.incomplete {
         color: $color-peach;
       }
       &.pending {
         color: transparent;
+        opacity: 0;
       }
     }
   }
