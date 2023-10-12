@@ -5,14 +5,36 @@ import { useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
 
 const Footer = () => {
-  const [message, setMessage] = useState("");
+  const [send, setSend] = useState("pending");
   const refForm = useRef();
   const refName = useRef();
   const refEmail = useRef();
   const refSubject = useRef();
   const refMessage = useRef();
+  const status = {
+    success: {
+      text: "Message successfully sent!",
+    },
+    failed: {
+      text1: "Please use a valid email.",
+      text2: "Please fill in all required fields!",
+      text3: "Failed to send the message, please try again",
+    },
+    pending: {
+      text: "pending",
+    },
+  };
+
+  const clearMessage = () => {
+    const timer = setTimeout(() => {
+      setSend("pending");
+    }, 5000);
+    return () => clearTimeout(timer);
+  };
+
   const sendEmail = (e) => {
     e.preventDefault();
+
     emailjs
       .sendForm(
         "service_t3m97oq",
@@ -23,15 +45,20 @@ const Footer = () => {
       .then(
         (result) => {
           console.log(result.text);
-          setMessage("Message successfully sent!");
+          setSend("success");
+          console.log(send);
           refName.current.value = "";
           refEmail.current.value = "";
           refSubject.current.value = "";
           refMessage.current.value = "";
+          clearMessage();
         },
         (error) => {
           console.log(error.text);
-          setMessage("Failed to send the message, please try again");
+
+          setSend("failed");
+          console.log(send);
+          clearMessage();
         }
       );
   };
@@ -82,7 +109,13 @@ const Footer = () => {
               <input type="submit" value="SEND" />
             </li>
             <li>
-              <span className="contact__form__message">{message}</span>
+              <span className={`${send} contact__form__message`}>
+                {send === "success"
+                  ? status.success.text
+                  : send === "failed"
+                  ? status.failed.text3
+                  : status.pending.text}
+              </span>
             </li>
           </ul>
         </form>
