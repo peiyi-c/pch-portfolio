@@ -70,7 +70,7 @@ const Navigation = () => {
                 scroll={scrollOffset}
                 role="menuitem"
               >
-                Get In Touch
+                Contact
               </HashLink>
             </div>
           </div>
