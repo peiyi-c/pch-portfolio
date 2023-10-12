@@ -8,7 +8,7 @@
 
   &__list {
     display: grid;
-    grid-template-columns: repeat(auto-fill, 5rem);
+    grid-template-columns: repeat(auto-fit, 5rem);
     justify-items: center;
     align-items: start;
     justify-content: space-evenly;
