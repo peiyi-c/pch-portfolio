@@ -62,7 +62,11 @@ textarea {
     opacity: 0.5;
   }
 }
-
+input[type="submit"] {
+  color: $color-rice;
+  background-color: $color-dark;
+  width: 50%;
+}
 textarea {
   padding-top: 0.7rem;
 }

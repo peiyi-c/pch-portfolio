@@ -15,7 +15,6 @@
     &__message {
       letter-spacing: 0.1rem;
       font-family: $font-fam-text;
-
       &.success {
         color: $color-taro;
       }
@@ -34,7 +33,6 @@
 
 input[type="text"],
 input[type="email"],
-input[type="submit"],
 textarea {
   &.success {
     color: $color-taro;
@@ -48,5 +46,26 @@ textarea {
   }
   &.pending {
     color: $color-dark;
+  }
+}
+
+input[type="submit"] {
+  &.success {
+    color: $color-rice;
+    background-color: $color-taro;
+    border-color: $color-taro;
+  }
+  &.failed,
+  &.invalid,
+  &.incomplete {
+    color: $color-rice;
+    background-color: $color-peach;
+    border-color: $color-peach;
+  }
+  &.pending {
+    color: $color-rice;
+  }
+  &:disabled {
+    display: none;
   }
 }

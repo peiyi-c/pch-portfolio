@@ -35,7 +35,7 @@ const Footer = () => {
   const clearMessage = () => {
     const timer = setTimeout(() => {
       setSend("pending");
-    }, 5000);
+    }, 3000);
     return () => clearTimeout(timer);
   };
 
@@ -49,10 +49,12 @@ const Footer = () => {
       !refMessage.current.value.trim()
     ) {
       setSend("incomplete");
+      clearMessage();
       return;
     }
     if (!checkEmail(refEmail.current.value)) {
       setSend("invalid");
+      clearMessage();
       return;
     }
 
@@ -67,7 +69,6 @@ const Footer = () => {
         (result) => {
           console.log(result.text);
           setSend("success");
-          console.log(send);
           refName.current.value = "";
           refEmail.current.value = "";
           refSubject.current.value = "";
@@ -78,7 +79,6 @@ const Footer = () => {
           console.log(error.text);
 
           setSend("failed");
-          console.log(send);
           clearMessage();
         }
       );
@@ -137,7 +137,12 @@ const Footer = () => {
               ></textarea>
             </li>
             <li>
-              <input className={`${send}`} type="submit" value="SEND" />
+              <input
+                className={`${send}`}
+                type="submit"
+                value="SEND"
+                disabled={send === "success"}
+              />
             </li>
             <li>
               <span className={`${send} contact__form__message`}>
