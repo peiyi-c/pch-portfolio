@@ -99,6 +99,7 @@ const Footer = () => {
             <li>
               <input
                 ref={refName}
+                className={`${send}`}
                 placeholder="Name"
                 type="text"
                 name="name"
@@ -108,6 +109,7 @@ const Footer = () => {
             <li>
               <input
                 ref={refEmail}
+                className={`${send}`}
                 placeholder="Email"
                 type="email"
                 name="email"
@@ -118,6 +120,7 @@ const Footer = () => {
             <li>
               <input
                 ref={refSubject}
+                className={`${send}`}
                 placeholder="Subject"
                 type="text"
                 name="subject"
@@ -127,13 +130,14 @@ const Footer = () => {
             <li>
               <textarea
                 ref={refMessage}
+                className={`${send}`}
                 placeholder="Message"
                 name="message"
                 required
               ></textarea>
             </li>
             <li>
-              <input type="submit" value="SEND" />
+              <input className={`${send}`} type="submit" value="SEND" />
             </li>
             <li>
               <span className={`${send} contact__form__message`}>

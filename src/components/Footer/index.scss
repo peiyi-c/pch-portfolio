@@ -31,3 +31,22 @@
     }
   }
 }
+
+input[type="text"],
+input[type="email"],
+input[type="submit"],
+textarea {
+  &.success {
+    color: $color-taro;
+    border-color: $color-taro;
+  }
+  &.failed,
+  &.invalid,
+  &.incomplete {
+    color: $color-peach;
+    border-color: $color-peach;
+  }
+  &.pending {
+    color: $color-dark;
+  }
+}
