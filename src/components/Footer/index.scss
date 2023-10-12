@@ -11,4 +11,10 @@
   &__title {
     @extend .font-size-180;
   }
+  &__form {
+    &__message {
+      font-family: $font-fam-text;
+      opacity: 1;
+    }
+  }
 }
