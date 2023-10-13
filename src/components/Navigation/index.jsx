@@ -43,7 +43,7 @@ const Navigation = () => {
             >
               <HashLink
                 smooth
-                to="/#intro"
+                to="/pch-portfolio/#intro"
                 scroll={scrollOffset}
                 role="menuitem"
               >
@@ -51,7 +51,7 @@ const Navigation = () => {
               </HashLink>
               <HashLink
                 smooth
-                to="/#projects"
+                to="/pch-portfolio/#projects"
                 scroll={scrollOffset}
                 role="menuitem"
               >
@@ -59,7 +59,7 @@ const Navigation = () => {
               </HashLink>
               <HashLink
                 smooth
-                to="/#skills"
+                to="/pch-portfolio/#skills"
                 scroll={scrollOffset}
                 role="menuitem"
               >
@@ -67,7 +67,7 @@ const Navigation = () => {
               </HashLink>
               <HashLink
                 smooth
-                to="/#contact"
+                to="/pch-portfolio/#contact"
                 scroll={scrollOffset}
                 role="menuitem"
               >
