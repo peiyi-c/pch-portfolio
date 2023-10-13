@@ -11,6 +11,9 @@
   &__title {
     @extend .font-size-180;
   }
+  &__text {
+    font-family: $font-fam-text;
+  }
   &__form {
     &__message {
       letter-spacing: 0.1rem;
