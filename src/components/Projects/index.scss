@@ -8,31 +8,38 @@
 
   &__list {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-column-gap: 2rem;
-    grid-row-gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(18.75rem, 1fr));
+    width: 100%;
+    grid-gap: 1.5rem;
 
-    @include breakpoint-up(medium) {
-      grid-template-columns: repeat(2, 1fr);
-    }
     &__item {
-      display: block;
-      margin: auto 1rem;
-      border: 0.2rem solid $color-dark;
-      font-family: $font-fam-text;
-      transition: transform 0.3s ease 0s;
+      overflow: hidden;
       position: relative;
+      width: 100%;
+      height: 100%;
+      border: 0.2rem solid $color-dark;
+
+      transition: transform 0.3s ease 0s;
 
       &:hover {
         transform: translateY(-1%) scale(1.005);
       }
-      &__link {
-      }
+
       &__image {
-        max-width: 100%;
-        height: auto;
+        width: 100%;
+        height: 25rem;
+        display: block;
         object-fit: cover;
-        overflow: hidden;
+        transition: opacity 0.2s ease-out;
+      }
+      &__text {
+        padding: 3%;
+        &-name {
+        }
+        &-description {
+          font-family: $font-fam-text;
+          font-size: 1rem;
+        }
       }
     }
   }

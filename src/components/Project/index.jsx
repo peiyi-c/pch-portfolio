@@ -1,6 +1,7 @@
 import "./index.scss";
-
+import { useLanguageContext } from "../Language/LanguageContext";
 const Project = ({ name, link, image, description }) => {
+  const { t } = useLanguageContext();
   return (
     <>
       <div className="projects__list__item">
@@ -12,7 +13,12 @@ const Project = ({ name, link, image, description }) => {
         >
           <img className="projects__list__item__image" src={image} />
         </a>
-        <div className="projects__list__item__name">{name}</div>
+        <div className="projects__list__item__text">
+          <h3 className="projects__list__item__text-name">{name}</h3>
+          <div className="projects__list__item__text-description">
+            {t(`${description}`)}
+          </div>
+        </div>
       </div>
     </>
   );
