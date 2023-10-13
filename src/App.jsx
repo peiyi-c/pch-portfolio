@@ -1,7 +1,7 @@
 import "./App.scss";
 import Navigation from "./components/Navigation";
 import Intro from "./components/Intro";
-import Works from "./components/Works";
+import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import Footer from "./components/Footer";
 import { LanguageContextProvider } from "./components/Language/LanguageContext";
@@ -11,7 +11,7 @@ function App() {
       <LanguageContextProvider>
         <Navigation />
         <Intro />
-        <Works />
+        <Projects />
         <Skills />
         <Footer />
       </LanguageContextProvider>
