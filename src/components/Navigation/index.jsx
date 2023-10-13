@@ -24,7 +24,7 @@ const Navigation = () => {
       <nav ref={navRef}>
         <div id="nav" className="nav container">
           <div className="nav__logo">
-            <HashLink smooth to="/#intro" scroll={scrollOffset}>
+            <HashLink smooth to="#top" scroll={scrollOffset}>
               <img src={LogoPCH} alt="PCH" />
             </HashLink>
           </div>
