@@ -1,4 +1,18 @@
 {
-  "line1": "About Me",
-  "line2": "My Works How is your day going?"
+  "About Me": "About Me",
+  "Projects": "Projects",
+  "Skills": "Skills",
+  "Contact": "Contact",
+  "Intro-Text": "Hi! I'm Pei-Yi, a Frontend Developer based in Germay.",
+  "Contact-Text": "Leave me a message here",
+  "Name": "Name",
+  "Email": "Email",
+  "Subject": "Subject",
+  "Message": "Message text...",
+  "Message-success": "Message successfully sent!",
+  "Message-failed": "Failed to send the message, please try again..",
+  "Message-invalid": "Please check your email!",
+  "Message-incomplete": "Please fill in all required fields!",
+  "Message-pending": "Pending",
+  "Send": "SEND"
 }

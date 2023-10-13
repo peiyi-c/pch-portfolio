@@ -3,7 +3,7 @@ import Wave from "../../assets/wave.svg";
 import Wave2 from "../../assets/wave2.svg";
 import { useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
-
+import { useLanguageContext } from "../Language/LanguageContext";
 const Footer = () => {
   const [send, setSend] = useState("pending");
   const refForm = useRef();
@@ -11,23 +11,8 @@ const Footer = () => {
   const refEmail = useRef();
   const refSubject = useRef();
   const refMessage = useRef();
-  const status = {
-    success: {
-      text: "Message successfully sent!",
-    },
-    failed: {
-      text: "Failed to send the message, please try again..",
-    },
-    invalid: {
-      text: "Please check your email!",
-    },
-    incomplete: {
-      text: "Please fill in all required fields!",
-    },
-    pending: {
-      text: "Pending",
-    },
-  };
+  const { t } = useLanguageContext();
+
   const checkEmail = (email) => {
     const regex = new RegExp("[^@]+@[^.]+..+", "i");
     return email.match(regex);
@@ -88,7 +73,8 @@ const Footer = () => {
     <>
       <footer id="contact" className="contact">
         <img className="contact__wave-2" aria-hidden="true" src={Wave2} />
-        <h1 className="contact__title">Get In Touch</h1>
+        <h1 className="contact__title"> {t("Contact")} </h1>
+        <h5 className="contact__text">{t("Contact-Text")}</h5>
         <form
           ref={refForm}
           onSubmit={sendEmail}
@@ -100,7 +86,7 @@ const Footer = () => {
               <input
                 ref={refName}
                 className={`${send}`}
-                placeholder="Name"
+                placeholder={t("Name")}
                 type="text"
                 name="name"
                 required
@@ -110,7 +96,7 @@ const Footer = () => {
               <input
                 ref={refEmail}
                 className={`${send}`}
-                placeholder="Email"
+                placeholder={t("Email")}
                 type="email"
                 name="email"
                 pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
@@ -121,7 +107,7 @@ const Footer = () => {
               <input
                 ref={refSubject}
                 className={`${send}`}
-                placeholder="Subject"
+                placeholder={t("Subject")}
                 type="text"
                 name="subject"
                 required
@@ -131,7 +117,7 @@ const Footer = () => {
               <textarea
                 ref={refMessage}
                 className={`${send}`}
-                placeholder="Message"
+                placeholder={t("Message")}
                 name="message"
                 required
               ></textarea>
@@ -140,13 +126,13 @@ const Footer = () => {
               <input
                 className={`${send}`}
                 type="submit"
-                value="SEND"
+                value={t("Send")}
                 disabled={send === "success"}
               />
             </li>
             <li>
               <span className={`${send} contact__form__message`}>
-                {status[send]["text"]}
+                {t("Message-" + `${send}`)}
               </span>
             </li>
           </ul>

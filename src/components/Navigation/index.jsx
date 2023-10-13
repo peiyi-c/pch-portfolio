@@ -4,11 +4,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 import { HashLink } from "react-router-hash-link";
 import { useState, useRef } from "react";
-import LanguageSelect from "../Language/LanguageSelect";
-
+import { useLanguageContext } from "../Language/LanguageContext";
 const Navigation = () => {
   const [menu, setMenu] = useState(false);
   const navRef = useRef();
+  const { t } = useLanguageContext();
   const toggleMenu = () => {
     setMenu(menu ? false : true);
   };
@@ -47,15 +47,15 @@ const Navigation = () => {
                 scroll={scrollOffset}
                 role="menuitem"
               >
-                About Me
+                {t("About Me")}
               </HashLink>
               <HashLink
                 smooth
-                to="/#works"
+                to="/#projects"
                 scroll={scrollOffset}
                 role="menuitem"
               >
-                Works
+                {t("Projects")}
               </HashLink>
               <HashLink
                 smooth
@@ -63,7 +63,7 @@ const Navigation = () => {
                 scroll={scrollOffset}
                 role="menuitem"
               >
-                Skills
+                {t("Skills")}
               </HashLink>
               <HashLink
                 smooth
@@ -71,9 +71,8 @@ const Navigation = () => {
                 scroll={scrollOffset}
                 role="menuitem"
               >
-                Contact
+                {t("Contact")}
               </HashLink>
-              <LanguageSelect />
             </div>
           </div>
         </div>

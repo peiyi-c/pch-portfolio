@@ -1,4 +1,18 @@
 {
-  "line1": "Hallo my i18n",
-  "line2": "Wie geht'dir?"
+  "About Me": "Über mich",
+  "Projects": "Projekte",
+  "Skills": "Skills",
+  "Contact": "Kontakt",
+  "Intro-Text": "Hi! Ich heiße Pei-Yi, eine Frontend-Developerin.",
+  "Contact-Text": "Schreib mir gerne eine Nachricht",
+  "Name": "Name",
+  "Email": "E-Mail",
+  "Subject": "Titel",
+  "Message": "Nachricht...",
+  "Message-success": "Nachricht erfolgreich gesendet!",
+  "Message-failed": "Versand fehlgeschlagen, versuch bitte später nochmal..",
+  "Message-invalid": "Bitte deine E-Mail überprüfen!",
+  "Message-incomplete": "Bitte alle Pflichtfelder ausfüllen!",
+  "Message-pending": "Warten",
+  "Send": "ABSENDEN"
 }

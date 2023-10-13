@@ -1,0 +1,11 @@
+@use "../src/utilities" as *;
+.languages {
+  display: flex;
+  font-size: 0.9rem;
+
+  &__item {
+    margin-left: 0.5rem;
+    padding: 0.25rem;
+    border: 0.2rem solid $color-dark;
+  }
+}
