@@ -72,13 +72,21 @@ const Footer = () => {
   return (
     <>
       <footer id="contact" className="contact">
-        <img className="contact__wave-2" aria-hidden="true" src={Wave2} />
-        <h1 className="contact__title"> {t("Contact")} </h1>
+        <img
+          className="contact__wave-2"
+          aria-hidden="true"
+          src={Wave2}
+          alt="wave"
+        />
+        <h1 className="contact__title" role="heading">
+          {t("Contact")}{" "}
+        </h1>
         <h5 className="contact__text">{t("Contact-Text")}</h5>
         <form
           ref={refForm}
           onSubmit={sendEmail}
           className="contact__form"
+          role="form"
           noValidate
         >
           <ul role="list">
@@ -128,6 +136,7 @@ const Footer = () => {
                 type="submit"
                 value={t("Send")}
                 disabled={send === "success"}
+                role="button"
               />
             </li>
             <li>
@@ -137,7 +146,12 @@ const Footer = () => {
             </li>
           </ul>
         </form>
-        <img className="contact__wave-1" aria-hidden="true" src={Wave} />
+        <img
+          className="contact__wave-1"
+          aria-hidden="true"
+          src={Wave}
+          alt="wave"
+        />
       </footer>
     </>
   );

@@ -7,7 +7,9 @@ const Projects = () => {
   return (
     <>
       <section id="projects" className="projects container">
-        <h1 className="projects__title">{t("Projects")}</h1>
+        <h1 className="projects__title" role="heading">
+          {t("Projects")}
+        </h1>
         <div role="list" className="projects__list">
           {projects.map((project) => {
             return <Project {...project} key={project.id} />;

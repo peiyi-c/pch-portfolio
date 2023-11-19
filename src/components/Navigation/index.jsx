@@ -21,11 +21,11 @@ const Navigation = () => {
 
   return (
     <>
-      <nav ref={navRef}>
+      <nav ref={navRef} role="navigation">
         <div id="nav" className="nav container">
           <div className="nav__logo">
             <HashLink smooth to="#top" scroll={scrollOffset}>
-              <img src={LogoPCH} alt="PCH" />
+              <img src={LogoPCH} alt="PCH logo" />
             </HashLink>
           </div>
 

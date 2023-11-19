@@ -5,12 +5,13 @@ const LanguageSelect = () => {
   const { languages, onClickLanguageChange } = useLanguageContext();
 
   return (
-    <ul role="list" className="languages" onClick={onClickLanguageChange}>
+    <ul className="languages" onClick={onClickLanguageChange} role="list">
       {Object.keys(languages).map((lng) => (
         <li
           key={languages[lng].nativeName}
           data-value={lng}
           className="languages__item"
+          role="listitem"
         >
           {languages[lng].nativeName}
         </li>

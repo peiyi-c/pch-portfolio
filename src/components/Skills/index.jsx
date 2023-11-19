@@ -19,7 +19,9 @@ const Skills = () => {
   return (
     <>
       <section id="skills" className="skills container">
-        <h1 className="skills__title">Skills</h1>
+        <h1 className="skills__title" role="heading">
+          Skills
+        </h1>
         <div className="container skills__list">
           <span className="skills__skill" data-name="HTML">
             <FontAwesomeIcon className="skills__skill__icon" icon={faHtml5} />
@@ -43,7 +45,11 @@ const Skills = () => {
             />
           </span>
           <span className="skills__skill typescript" data-name="TypeScript">
-            <img className="skills__skill__icon " src={TypeScript} />
+            <img
+              className="skills__skill__icon "
+              src={TypeScript}
+              alt="typescript"
+            />
           </span>
           <span className="skills__skill" data-name="Node.js">
             <FontAwesomeIcon className="skills__skill__icon" icon={faNodeJs} />
