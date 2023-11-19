@@ -8,7 +8,7 @@
   "Project-description2": "This app calculates an age in years, months, and days provided a valid date.",
   "Project-description3": "A fictional portfolio website with some animations.",
   "Project-description4": "A classic calculation app with light, dark and high-contrast modes.",
-  "Project-description5": "A website where users can search for country flags and information. The information is provided by a third party - restcountries API",
+  "Project-description5": "A website where users can search for country flags and information. The information is provided by the third party service - restcountries API",
   "Contact-Text": "Leave me a message here",
   "Name": "Name",
   "Email": "Email",
