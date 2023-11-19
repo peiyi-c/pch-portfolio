@@ -10,9 +10,11 @@ function App() {
     <>
       <LanguageContextProvider>
         <Navigation />
-        <Intro />
-        <Projects />
-        <Skills />
+        <main role="main">
+          <Intro />
+          <Projects />
+          <Skills />
+        </main>
         <Footer />
       </LanguageContextProvider>
     </>
