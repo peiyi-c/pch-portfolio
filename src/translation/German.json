@@ -7,6 +7,8 @@
   "Project-description1": "Ein Nachbau der Website Backstage Talks - Magazine Archive.",
   "Project-description2": "Eine App, die mit eingegebenem Daten das Alter kalkuliert.",
   "Project-description3": "Eine Portfolio-Website mit Animationen.",
+  "Project-description4": "Ein Taschenrechner mit Tag-, Nacht- und Kontrastmodus.",
+  "Project-description5": "Eine Website, auf der die Benutzer nach Landesflaggen und Informationen suchen können. Die informationen stammen von dem Drittanbieter - restcountries API",
   "Contact-Text": "Schreib mir gerne eine Nachricht",
   "Name": "Name",
   "Email": "E-Mail",
@@ -17,5 +19,6 @@
   "Message-invalid": "Bitte deine E-Mail überprüfen!",
   "Message-incomplete": "Bitte alle Pflichtfelder ausfüllen!",
   "Message-pending": "Warten",
-  "Send": "ABSENDEN"
+  "Send": "ABSENDEN",
+  "Reset": "ZURÜCKSETZEN"
 }

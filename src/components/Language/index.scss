@@ -7,5 +7,9 @@
     margin-left: 0.5rem;
     padding: 0.25rem;
     border: 0.2rem solid $color-dark;
+    &:hover {
+      color: $color-white;
+      background-color: $color-dark;
+    }
   }
 }
