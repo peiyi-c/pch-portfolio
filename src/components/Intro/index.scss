@@ -1,9 +1,65 @@
 @use "../src/utilities" as *;
 .intro {
+  position: relative;
   &__title {
   }
   &__text {
     @extend .font-size-120;
     font-family: $font-fam-text;
+  }
+  img {
+    position: absolute;
+    top: -40%;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: leftright 10s linear 1 forwards;
+  }
+  &__img {
+    z-index: -5;
+  }
+}
+
+@keyframes leftright {
+  0% {
+    transform: translateX(-30%);
+  }
+  25% {
+    transform: translateX(calc(-50% + 1rem));
+    filter: brightness(1.2);
+    opacity: 0.9;
+  }
+  50% {
+    transform: translateX(calc(-50% + -1rem));
+  }
+  60% {
+    transform: translateX(calc(-50% - -1rem));
+  }
+  65% {
+    transform: translateX(calc(-50% + -1rem));
+    opacity: 0.8;
+  }
+  70% {
+    transform: translateX(-60%);
+  }
+  75% {
+    transform: translateX(calc(-70% + 1rem));
+    filter: brightness(0.99);
+    opacity: 0.7;
+  }
+  80% {
+    transform: translateX(-70%);
+    opacity: 0.6;
+  }
+  85% {
+    transform: translateX(calc(-70% + -1rem));
+    opacity: 0.4;
+  }
+  90% {
+    transform: translateX(-80%);
+    opacity: 0.2;
+  }
+  100% {
+    transform: translateX(calc(-80% + -1rem));
+    opacity: 0;
   }
 }
