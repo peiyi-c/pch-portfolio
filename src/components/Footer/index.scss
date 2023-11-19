@@ -13,6 +13,7 @@
   }
   &__text {
     font-family: $font-fam-text;
+    margin-bottom: 2rem;
   }
   &__form {
     &__message {
@@ -26,7 +27,8 @@
       &.incomplete {
         color: $color-peach;
       }
-      &.pending {
+      &.pending,
+      &.reset {
         color: transparent;
         opacity: 0;
       }

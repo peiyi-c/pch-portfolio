@@ -138,6 +138,12 @@ const Footer = () => {
                 disabled={send === "success"}
                 role="button"
               />
+              <input
+                className="reset"
+                type="reset"
+                value={t("Reset")}
+                role="button"
+              />
             </li>
             <li>
               <span className={`${send} contact__form__message`}>

@@ -58,6 +58,7 @@ svg {
 input[type="text"],
 input[type="email"],
 input[type="submit"],
+input[type="reset"],
 textarea,
 select {
   width: 80%;
@@ -79,13 +80,24 @@ select {
 input[type="submit"] {
   color: $color-rice;
   background-color: $color-dark;
-  width: 50%;
+  width: 44%;
+  margin: auto 0.5%;
   @include breakpoint-up(large) {
-    width: 45%;
+    width: 35%;
+  }
+}
+input[type="reset"] {
+  color: $color-dark;
+  background-color: $color-rice;
+  width: 34%;
+  margin: auto 0.5%;
+  @include breakpoint-up(large) {
+    width: 25%;
   }
 }
 textarea {
   padding-top: 0.7rem;
+  min-height: 9rem;
 }
 select {
   height: fit-content;
