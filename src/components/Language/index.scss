@@ -1,6 +1,8 @@
 @use "../src/utilities" as *;
 .languages {
   display: flex;
+  width: 95%;
+  justify-content: flex-end;
   font-size: 0.9rem;
 
   &__item {
