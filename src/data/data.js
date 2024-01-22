@@ -15,14 +15,14 @@ const projects = [
   //     "https://user-images.githubusercontent.com/73789013/271775648-3046bc72-66e2-4e5a-961f-a4fa1732b808.png",
   //   description: "Project-description2",
   // },
-  {
-    id: 3,
-    name: "Fylo",
-    link: "https://extra-large-cakes.surge.sh/",
-    image:
-      "https://user-images.githubusercontent.com/73789013/265251108-c7683032-3703-4ad2-a570-ac14df354d2b.png",
-    description: "Project-description3",
-  },
+  // {
+  //   id: 3,
+  //   name: "Fylo",
+  //   link: "https://blue-eyed-beds.surge.sh/",
+  //   image:
+  //     "https://user-images.githubusercontent.com/73789013/265251108-c7683032-3703-4ad2-a570-ac14df354d2b.png",
+  //   description: "Project-description3",
+  // },
   {
     id: 4,
     name: "Calculator App",
@@ -38,6 +38,14 @@ const projects = [
     image:
       "https://user-images.githubusercontent.com/73789013/284016628-dc5b9596-f331-465e-8182-077f99290919.png",
     description: "Project-description5",
+  },
+  {
+    id: 6,
+    name: "Supernova Black",
+    link: "https://peiyi-c.github.io/2023-F2E-mission1/",
+    image:
+      "https://github.com/peiyi-c/2023-F2E-mission1/assets/73789013/cff6f154-77b3-45c7-96fa-d63e0e77f83a",
+    description: "Project-description6",
   },
 ];
 
