@@ -82,8 +82,9 @@ input[type="submit"] {
   background-color: $color-dark;
   width: 44%;
   margin: auto 0.5%;
-  @include breakpoint-up(large) {
-    width: 35%;
+  @include breakpoint-up(medium) {
+    margin: 1% 0.5%;
+    width: 50%;
   }
 }
 input[type="reset"] {
@@ -91,8 +92,9 @@ input[type="reset"] {
   background-color: $color-rice;
   width: 34%;
   margin: auto 0.5%;
-  @include breakpoint-up(large) {
-    width: 25%;
+  @include breakpoint-up(medium) {
+    margin: 1% 0.5%;
+    width: 50%;
   }
 }
 textarea {
