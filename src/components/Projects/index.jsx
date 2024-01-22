@@ -11,7 +11,7 @@ const Projects = () => {
           {t("Projects")}
         </h1>
         <div role="list" className="projects__list">
-          {projects.map((project) => {
+          {[...projects].reverse().map((project) => {
             return <Project {...project} key={project.id} />;
           })}
         </div>
