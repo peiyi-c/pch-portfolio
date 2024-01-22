@@ -78,80 +78,86 @@ const Footer = () => {
           src={Wave2}
           alt="wave"
         />
-        <h1 className="contact__title" role="heading">
-          {t("Contact")}{" "}
-        </h1>
-        <h5 className="contact__text">{t("Contact-Text")}</h5>
-        <form
-          ref={refForm}
-          onSubmit={sendEmail}
-          className="contact__form"
-          role="form"
-          noValidate
-        >
-          <ul role="list">
-            <li>
-              <input
-                ref={refName}
-                className={`${send}`}
-                placeholder={t("Name")}
-                type="text"
-                name="name"
-                required
-              />
-            </li>
-            <li>
-              <input
-                ref={refEmail}
-                className={`${send}`}
-                placeholder={t("Email")}
-                type="email"
-                name="email"
-                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
-                required
-              />
-            </li>
-            <li>
-              <input
-                ref={refSubject}
-                className={`${send}`}
-                placeholder={t("Subject")}
-                type="text"
-                name="subject"
-                required
-              />
-            </li>
-            <li>
-              <textarea
-                ref={refMessage}
-                className={`${send}`}
-                placeholder={t("Message")}
-                name="message"
-                required
-              ></textarea>
-            </li>
-            <li>
-              <input
-                className={`${send}`}
-                type="submit"
-                value={t("Send")}
-                disabled={send === "success"}
-                role="button"
-              />
-              <input
-                className="reset"
-                type="reset"
-                value={t("Reset")}
-                role="button"
-              />
-            </li>
-            <li>
-              <span className={`${send} contact__form__message`}>
-                {t("Message-" + `${send}`)}
-              </span>
-            </li>
-          </ul>
-        </form>
+        <div className="contact__content">
+          <div>
+            <h1 className="contact__title" role="heading">
+              {t("Contact")}{" "}
+            </h1>
+            <h5 className="contact__text">{t("Contact-Text")}</h5>
+          </div>
+
+          <form
+            ref={refForm}
+            onSubmit={sendEmail}
+            className="contact__form"
+            role="form"
+            noValidate
+          >
+            <ul role="list">
+              <li>
+                <input
+                  ref={refName}
+                  className={`${send}`}
+                  placeholder={t("Name")}
+                  type="text"
+                  name="name"
+                  required
+                />
+              </li>
+              <li>
+                <input
+                  ref={refEmail}
+                  className={`${send}`}
+                  placeholder={t("Email")}
+                  type="email"
+                  name="email"
+                  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                  required
+                />
+              </li>
+              <li>
+                <input
+                  ref={refSubject}
+                  className={`${send}`}
+                  placeholder={t("Subject")}
+                  type="text"
+                  name="subject"
+                  required
+                />
+              </li>
+              <li>
+                <textarea
+                  ref={refMessage}
+                  className={`${send}`}
+                  placeholder={t("Message")}
+                  name="message"
+                  required
+                ></textarea>
+              </li>
+              <li>
+                <input
+                  className={`${send}`}
+                  type="submit"
+                  value={t("Send")}
+                  disabled={send === "success"}
+                  role="button"
+                />
+                <input
+                  className="reset"
+                  type="reset"
+                  value={t("Reset")}
+                  role="button"
+                />
+              </li>
+              <li>
+                <span className={`${send} contact__form__message`}>
+                  {t("Message-" + `${send}`)}
+                </span>
+              </li>
+            </ul>
+          </form>
+        </div>
+
         <img
           className="contact__wave-1"
           aria-hidden="true"
