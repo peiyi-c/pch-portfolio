@@ -6,6 +6,12 @@
   &__text {
     @extend .font-size-120;
     font-family: $font-fam-text;
+    @include breakpoint-up(medium) {
+      font-size: 1.3rem;
+    }
+    @include breakpoint-up(large) {
+      font-size: 1.5rem;
+    }
   }
   img {
     position: absolute;
