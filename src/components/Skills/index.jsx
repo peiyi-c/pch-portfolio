@@ -12,6 +12,7 @@ import {
   faGit,
   faNpm,
   faFigma,
+  faPhp,
 } from "@fortawesome/free-brands-svg-icons";
 import TypeScript from "../../assets/TypeScript.svg";
 
@@ -26,10 +27,13 @@ const Skills = () => {
           <span className="skills__skill" data-name="HTML">
             <FontAwesomeIcon className="skills__skill__icon" icon={faHtml5} />
           </span>
+          <span className="skills__skill" data-name="PHP">
+            <FontAwesomeIcon className="skills__skill__icon" icon={faPhp} />
+          </span>
           <span className="skills__skill" data-name="CSS">
             <FontAwesomeIcon className="skills__skill__icon" icon={faCss3} />
           </span>
-          <span className="skills__skill" data-name="Scss">
+          <span className="skills__skill" data-name="SCSS">
             <FontAwesomeIcon className="skills__skill__icon" icon={faSass} />
           </span>
           <span className="skills__skill" data-name="Bootstrap">
