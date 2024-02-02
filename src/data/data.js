@@ -44,7 +44,7 @@ const projects = [
     name: "Simple Reddit - awesome hamster",
     link: "https://real-clock.surge.sh/",
     image:
-      "https://github.com/peiyi-c/simple-reddit/assets/73789013/eb401d83-eedf-4205-876e-c2a6b32de999",
+      "https://github.com/peiyi-c/simple-reddit/assets/73789013/fd6d176d-199f-4a46-b525-4d3684d92a38",
     description: "Project-description6",
   },
   {
