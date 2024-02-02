@@ -23,14 +23,14 @@ const projects = [
   //     "https://user-images.githubusercontent.com/73789013/265251108-c7683032-3703-4ad2-a570-ac14df354d2b.png",
   //   description: "Project-description3",
   // },
-  {
-    id: 4,
-    name: "Calculator App",
-    link: "https://third-toes.surge.sh/",
-    image:
-      "https://user-images.githubusercontent.com/73789013/277726426-e5ecb4e8-c42e-4375-8537-93351ebff886.png",
-    description: "Project-description4",
-  },
+  // {
+  //   id: 4,
+  //   name: "Calculator App",
+  //   link: "https://third-toes.surge.sh/",
+  //   image:
+  //     "https://user-images.githubusercontent.com/73789013/277726426-e5ecb4e8-c42e-4375-8537-93351ebff886.png",
+  //   description: "Project-description4",
+  // },
   {
     id: 5,
     name: "Where in the world?",
@@ -41,11 +41,19 @@ const projects = [
   },
   {
     id: 6,
+    name: "Simple Reddit - awesome hamster",
+    link: "https://real-clock.surge.sh/",
+    image:
+      "https://github.com/peiyi-c/simple-reddit/assets/73789013/eb401d83-eedf-4205-876e-c2a6b32de999",
+    description: "Project-description6",
+  },
+  {
+    id: 7,
     name: "Supernova Black",
     link: "https://peiyi-c.github.io/2023-F2E-mission1/",
     image:
       "https://github.com/peiyi-c/2023-F2E-mission1/assets/73789013/cff6f154-77b3-45c7-96fa-d63e0e77f83a",
-    description: "Project-description6",
+    description: "Project-description7",
   },
 ];
 
