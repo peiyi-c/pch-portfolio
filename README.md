@@ -1,6 +1,6 @@
 # My Portfolio Website
 
-My portfolio website... with regular updates!
+Portfolio website, version 2023.
 
 ### Link
 
