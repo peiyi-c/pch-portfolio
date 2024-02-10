@@ -14,10 +14,14 @@ nav {
   &__logo {
     display: flex;
     align-items: center;
+    font-family: $font-fam-logo;
+    @extend .font-size-300;
 
-    img {
-      height: 4rem;
-      width: auto;
+    @include breakpoint-down(small) {
+      font-size: 2rem;
+    }
+    @include breakpoint-up(large) {
+      transform: scale(1.1);
     }
   }
 
