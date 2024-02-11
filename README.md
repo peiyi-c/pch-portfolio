@@ -33,3 +33,4 @@ Portfolio website, version 2023.
 
 - Colors inspired by [Next Level Cinnamon Rolls](https://cinnamood.de/)
 - Arrangement inspired by [Frontend Practice | Projects](https://www.frontendpractice.com/projects)
+- Icons by [Icons8](https://icons8.com)
