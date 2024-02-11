@@ -1,17 +1,32 @@
 import "./index.scss";
-import { useLanguageContext } from "../Language/LanguageContext";
-import LanguageSelect from "../Language/LanguageSelect";
+import { useRef } from "react";
+import introJpeg from "../../assets/intro_bg.jpeg";
+import introMp4 from "../../assets/intro_bg.mp4";
+import introWebM from "../../assets/intro_bg.webm";
 
 const Intro = () => {
-  const { t } = useLanguageContext();
+  const videoRef = useRef();
+  const setPlayBack = () => {
+    videoRef.current.playbackRate = 0.25;
+  };
+
   return (
     <>
-      <LanguageSelect />
       <section id="intro" className="intro container">
+        <video
+          autoPlay
+          muted
+          loop
+          ref={videoRef}
+          onCanPlay={() => setPlayBack()}
+          poster={introJpeg}
+        >
+          <source src={introMp4} type="video/mp4" />
+          <source src={introWebM} type="video/webm" />
+        </video>
         <h1 className="intro__title" role="heading">
-          Pei-Yi
+          Pei-Yi Chen
         </h1>
-        <p className="intro__text"> {t("Intro-Text")} </p>
       </section>
     </>
   );
