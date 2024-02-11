@@ -15,14 +15,14 @@ const projects = [
   //     "https://user-images.githubusercontent.com/73789013/271775648-3046bc72-66e2-4e5a-961f-a4fa1732b808.png",
   //   description: "Project-description2",
   // },
-  // {
-  //   id: 3,
-  //   name: "Fylo",
-  //   link: "https://blue-eyed-beds.surge.sh/",
-  //   image:
-  //     "https://user-images.githubusercontent.com/73789013/265251108-c7683032-3703-4ad2-a570-ac14df354d2b.png",
-  //   description: "Project-description3",
-  // },
+  {
+    id: 3,
+    name: "Fylo",
+    link: "https://blue-eyed-beds.surge.sh/",
+    image:
+      "https://user-images.githubusercontent.com/73789013/265251108-c7683032-3703-4ad2-a570-ac14df354d2b.png",
+    description: "Project-description3",
+  },
   // {
   //   id: 4,
   //   name: "Calculator App",
@@ -39,14 +39,14 @@ const projects = [
       "https://user-images.githubusercontent.com/73789013/284016628-dc5b9596-f331-465e-8182-077f99290919.png",
     description: "Project-description5",
   },
-  {
-    id: 6,
-    name: "Simple Reddit - awesome hamster",
-    link: "https://real-clock.surge.sh/",
-    image:
-      "https://github.com/peiyi-c/simple-reddit/assets/73789013/fd6d176d-199f-4a46-b525-4d3684d92a38",
-    description: "Project-description6",
-  },
+  // {
+  //   id: 6,
+  //   name: "Simple Reddit - awesome hamster",
+  //   link: "https://real-clock.surge.sh/",
+  //   image:
+  //     "https://github.com/peiyi-c/simple-reddit/assets/73789013/fd6d176d-199f-4a46-b525-4d3684d92a38",
+  //   description: "Project-description6",
+  // },
   {
     id: 7,
     name: "Supernova Black",
