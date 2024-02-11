@@ -9,11 +9,15 @@
     position: absolute;
     margin: -150px 0 -5vh 0;
     inset: 0;
-
     background: linear-gradient($color-rice, $color-white);
-    opacity: 0.5;
+    opacity: 0.7;
     z-index: -1;
+
+    @include breakpoint-up(large) {
+      margin: -150px 0 -8vh 0;
+    }
   }
+
   // video
   video {
     height: 50vh;
@@ -23,15 +27,19 @@
     width: 100%;
     object-fit: cover;
     z-index: -2;
+    @include breakpoint-up(large) {
+      height: 52vh;
+    }
   }
 
   &__title {
     padding-top: 0;
     font-family: $font-fam-logo;
+    color: $color-black;
     @extend .font-size-300;
 
     @include breakpoint-down(small) {
-      font-size: 2rem;
+      font-size: 2.5rem;
     }
     @include breakpoint-up(large) {
       transform: scale(1.1);
