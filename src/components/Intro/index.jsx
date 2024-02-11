@@ -17,6 +17,7 @@ const Intro = () => {
           autoPlay
           muted
           loop
+          playsInline
           ref={videoRef}
           onCanPlay={() => setPlayBack()}
           poster={introJpeg}
