@@ -1,0 +1,92 @@
+@use "../src/utilities" as *;
+
+.loader {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  animation: loader 6s cubic-bezier(1, -0.51, 0.51, 0.85) 1;
+
+  &-bubble {
+    position: relative;
+    top: 100vh;
+    left: 50vw;
+    animation: upLeft 3s ease-in 1s forwards 1;
+  }
+  &-bubble2 {
+    position: relative;
+    top: 100vh;
+    left: 70vw;
+    animation: upRight 2s ease-in 1s forwards 1;
+  }
+}
+
+@keyframes loader {
+  0% {
+    background: rgb(245, 241, 234);
+    background: linear-gradient(
+      240deg,
+      rgba(245, 241, 234, 1) 35%,
+      rgba(252, 212, 255, 1) 100%
+    );
+    z-index: 10;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+    z-index: -10;
+  }
+}
+
+@keyframes upLeft {
+  0% {
+    top: 100vh;
+    left: 50vw;
+  }
+  10% {
+    top: 75vh;
+    left: 30vw;
+  }
+  50% {
+    transform: scale(0.8);
+  }
+  80% {
+    left: 5vw;
+    transform: scale(0.5) rotate(60deg);
+  }
+  99% {
+    top: -100px;
+    left: -100px;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes upRight {
+  0% {
+    top: 100vh;
+    left: 70vw;
+  }
+  10% {
+    top: 75vh;
+    left: 80vw;
+    transform: scale(0.8) rotate(60deg);
+  }
+  70% {
+    top: 50vh;
+    left: 80vw;
+    transform: scale(0.5) rotate(120deg);
+  }
+  90% {
+    top: 40vh;
+    left: 85vw;
+    transform: scale(0.4) rotate(180deg);
+  }
+  100% {
+    top: 30vh;
+    left: 90vw;
+    opacity: 0;
+  }
+}
