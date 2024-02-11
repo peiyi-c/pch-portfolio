@@ -2,13 +2,30 @@ import "./index.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 import { HashLink } from "react-router-hash-link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useLanguageContext } from "../Language/LanguageContext";
+import LanguageSelect from "../Language/LanguageSelect";
 
 const Navigation = () => {
+  const [scrolled, setScrolled] = useState(false);
   const [menu, setMenu] = useState(false);
+
   const { t } = useLanguageContext();
+
+  useEffect(() => {
+    const onScroll = () => {
+      if (window.scrollY > 111) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+    window.addEventListener("scroll", onScroll);
+    return () => window.removeEventListener("scroll", onScroll);
+  });
+
   const toggleMenu = () => {
+    console.log("menu");
     setMenu(menu ? false : true);
   };
 
@@ -19,13 +36,9 @@ const Navigation = () => {
   };
 
   return (
-    <nav role="navigation">
+    <nav role="navigation" className={scrolled ? "scrolled" : ""}>
       <div id="nav" className="nav container">
-        <div className="nav__logo">
-          <HashLink smooth to="#top" scroll={scrollOffset}>
-            <p>Pei-Yi Chen</p>
-          </HashLink>
-        </div>
+        <div className="nav__logo"></div>
 
         <div className="nav__bar" onClick={toggleMenu}>
           <div className="nav__bar__menu" role="switch" aria-checked={menu}>
@@ -36,7 +49,9 @@ const Navigation = () => {
             )}
           </div>
           <div
-            className={menu ? "nav__bar__links open" : "nav__bar__links"}
+            className={`${menu ? "open" : ""} ${
+              scrolled ? "scrolled" : ""
+            } nav__bar__links`}
             role="menu"
           >
             <HashLink
@@ -71,10 +86,11 @@ const Navigation = () => {
             >
               {t("Contact")}
             </HashLink>
+            <LanguageSelect />
           </div>
         </div>
       </div>
-      <hr />
+      <hr style={{ display: scrolled ? "block" : "none" }} />
     </nav>
   );
 };

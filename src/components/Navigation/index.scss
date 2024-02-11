@@ -3,27 +3,18 @@ nav {
   position: sticky;
   top: 0;
   left: 0;
-  background-color: $color-white;
+  transition: background 0.5s ease-out;
   z-index: 9;
+  &.scrolled {
+    padding: 0;
+    background: $color-white;
+    opacity: 0.9;
+  }
 }
 .nav {
   height: 4rem;
   display: flex;
   justify-content: space-between;
-
-  &__logo {
-    display: flex;
-    align-items: center;
-    font-family: $font-fam-logo;
-    @extend .font-size-300;
-
-    @include breakpoint-down(small) {
-      font-size: 2rem;
-    }
-    @include breakpoint-up(large) {
-      transform: scale(1.1);
-    }
-  }
 
   &__bar {
     display: flex;
@@ -72,6 +63,11 @@ nav {
       &.open {
         opacity: 0.95;
         right: 0;
+      }
+      &.scrolled {
+        a {
+          color: $color-dark;
+        }
       }
     }
   }
