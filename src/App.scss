@@ -19,6 +19,9 @@ body {
   @include breakpoint-up(large) {
     padding: 5vh 5vw;
   }
+  @include breakpoint-up(xlarge) {
+    padding: 5vh 10vw;
+  }
 }
 
 a {
@@ -29,7 +32,19 @@ a {
 a:hover,
 a:active,
 a.active {
-  font-weight: 700;
+  animation: updown 3s linear infinite;
+}
+
+@keyframes updown {
+  0% {
+    transform: translateY(-0.25rem);
+  }
+  50% {
+    transform: translateY(0.25rem);
+  }
+  100% {
+    transform: translateY(-0.25rem);
+  }
 }
 
 hr {
