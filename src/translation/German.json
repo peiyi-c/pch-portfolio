@@ -11,6 +11,7 @@
   "Project-description5": "Eine Website, auf der die Benutzer nach Landesflaggen und Informationen suchen können. Die informationen stammen von dem Drittanbieter - restcountries API",
   "Project-description6": "Ein Simple-Reddit mit Hamster als Hauptthema. Die Reddit-API wurde verwendet.",
   "Project-description7": "Der Kandidat Supernova Black kandidiert für das Amt des Bürgermeisters in Meow-Li. Er hat diese Website mit Animationen erstellt, um mehr Unterstützung von den Einheimischen zu bekommen!",
+  "Project-description8": "Eine social-App. Benutzer können Threads starten, beantworten oder re-posten. Authentifizierung der Nutzer und Data-Storage erfolgen über Google Firebase.",
   "Contact-Text": "Schreib mir gerne eine Nachricht",
   "Name": "Name",
   "Email": "E-Mail",

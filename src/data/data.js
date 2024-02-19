@@ -55,6 +55,14 @@ const projects = [
       "https://github.com/peiyi-c/2023-F2E-mission1/assets/73789013/cff6f154-77b3-45c7-96fa-d63e0e77f83a",
     description: "Project-description7",
   },
+  {
+    id: 8,
+    name: "Threads Clone",
+    link: "https://threads-clone-silk-five.vercel.app/@Emily.Swift",
+    image:
+      "https://github-production-user-asset-6210df.s3.amazonaws.com/73789013/306058406-bc22e4a5-97d0-4470-b9af-403ae5e61cad.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20240219%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240219T193726Z&X-Amz-Expires=300&X-Amz-Signature=2afa31e01428fdf5a78e5e60a8cd5c01bc85bc58f9792589ed1cbcaf60e941ff&X-Amz-SignedHeaders=host&actor_id=73789013&key_id=0&repo_id=737688878",
+    description: "Project-description8",
+  },
 ];
 
 export default projects;
